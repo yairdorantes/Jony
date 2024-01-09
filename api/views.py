@@ -2,12 +2,11 @@
 from django.views import View
 import json
 from django.http import JsonResponse
-from .models import Musicians
+
 import cv2
 import numpy as np
 from pyzbar.pyzbar import decode
 import base64
-from io import BytesIO
 
 
 def BarcodeReader(base64_image):
