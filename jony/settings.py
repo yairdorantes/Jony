@@ -27,7 +27,10 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ["https://jony-production.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://jony-production.up.railway.app",
+    "https://subtle-meerkat-e1a4c0.netlify.app/",
+]
 SITE_URL = "https://jony-production.up.railway.app"
 
 CORS_ORIGIN_ALLOW_ALL = True
@@ -80,23 +83,23 @@ WSGI_APPLICATION = "jony.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "railway",
-        "USER": "postgres",
-        "PASSWORD": "jh26f1lRWA5qqIaTTFye",
-        "HOST": "containers-us-west-2.railway.app",
-        "PORT": "5454",
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "railway",
+#         "USER": "postgres",
+#         "PASSWORD": "jh26f1lRWA5qqIaTTFye",
+#         "HOST": "containers-us-west-2.railway.app",
+#         "PORT": "5454",
+#     }
+# }
 # kk
 
 # Password validation
