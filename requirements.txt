@@ -19,3 +19,5 @@ whitenoise==6.2.0
 # django-cloudinary-storage==0.3.0
 # openai==0.26.0
 python-dotenv==0.21.0
+pyzbar==0.1.9
+opencv-python==4.9.0.80
